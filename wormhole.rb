@@ -11,7 +11,7 @@ class Wormhole < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.1.0/wormhole_darwin_amd64.tar.gz"
-      sha256 "54a8d65f8a59bc019930126b52064740b27d0b8fe84e556dd3e1adeae94dc769"
+      sha256 "3d7eaf4e045f1af300813ee553b32ff29d9fd4aaa84bef12a2a04997bfde4dc6"
 
       define_method(:install) do
         bin.install "wormhole"
@@ -19,7 +19,7 @@ class Wormhole < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.1.0/wormhole_darwin_arm64.tar.gz"
-      sha256 "aefa500e57677c4bf545c871ad202a5ee1bd87a4ea3e6a208c5f0cdf302f8cde"
+      sha256 "901622b537e2628fd0166e6a90e27536377f0d1ba1b3890f01726a42291513d9"
 
       define_method(:install) do
         bin.install "wormhole"
@@ -30,14 +30,14 @@ class Wormhole < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.1.0/wormhole_linux_amd64.tar.gz"
-      sha256 "374e172bb3d6bf04f8ba809eff43da604829b10444354d623ae398825faa26de"
+      sha256 "36bce9ddbdb34f2f3da9de0f4ff58b575ab68eff2fc30642ce76b573827349af"
       define_method(:install) do
         bin.install "wormhole"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.1.0/wormhole_linux_arm64.tar.gz"
-      sha256 "cb66ebbb593bbae4cfee58104ec9e6a31f23b46cd6edfa7f442a0d7c1d138ed2"
+      sha256 "5dad96b7ef845bc0e35ac555b104f89e27a545bba69cad3ed720ade191cb7626"
       define_method(:install) do
         bin.install "wormhole"
       end
