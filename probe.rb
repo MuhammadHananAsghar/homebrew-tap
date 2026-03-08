@@ -5,21 +5,21 @@
 class Probe < Formula
   desc "Universal LLM API Debugger — intercept, inspect, and replay every AI call your app makes."
   homepage "https://github.com/MuhammadHananAsghar/probe"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.2/probe_darwin_amd64.tar.gz"
-      sha256 "2e06062fb8965edb9775c1aff3b7f62e70a8f9a86869219437ecc88d5307a6aa"
+      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.3/probe_darwin_amd64.tar.gz"
+      sha256 "fc186b6912695496ee32a1629f7b7dd44cfedc5755529a512abc6faaf404cbc0"
 
       define_method(:install) do
         bin.install "probe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.2/probe_darwin_arm64.tar.gz"
-      sha256 "5f4de3e38bd0b1fa36ef22c0c6556ebfafe364f11cf8b063d28fdbe5a63dc270"
+      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.3/probe_darwin_arm64.tar.gz"
+      sha256 "7266c8f15e19d963ce1afade720394b0e4250936475ed9db75e71d734f6a67a5"
 
       define_method(:install) do
         bin.install "probe"
@@ -29,15 +29,15 @@ class Probe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.2/probe_linux_amd64.tar.gz"
-      sha256 "cddd7afdf0cd576ebdc7f98394c3f95aabd5bdfb43e5096d3a77b53e2ecc990e"
+      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.3/probe_linux_amd64.tar.gz"
+      sha256 "697f004ba8ae259387d3a0c3db3fd2d5438b01ac450ae9cb25ba4f1ecb73f4b1"
       define_method(:install) do
         bin.install "probe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.2/probe_linux_arm64.tar.gz"
-      sha256 "4fce0f12c9586d182165363593c91a538d913790080152e690cd7a76d6ac3fe4"
+      url "https://github.com/MuhammadHananAsghar/probe/releases/download/v0.1.3/probe_linux_arm64.tar.gz"
+      sha256 "f7fddcabd7a3737d02eaba0ff445bf1ae6980e0d221660f851bb10ec1d9b1530"
       define_method(:install) do
         bin.install "probe"
       end
