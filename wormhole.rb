@@ -5,21 +5,21 @@
 class Wormhole < Formula
   desc "Expose your localhost to the internet. Open-source ngrok alternative."
   homepage "https://github.com/MuhammadHananAsghar/wormhole"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.2.1/wormhole_darwin_amd64.tar.gz"
-      sha256 "659a4eeee96f24cfab062b3138fe2bd81035e824b38657e8ac55ed169344b216"
+      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.3.0/wormhole_darwin_amd64.tar.gz"
+      sha256 "b771b7ed4323c1f26bf79fbdd63662cc1fa72c6b4f3d35e1ec056407bf0e7db6"
 
       define_method(:install) do
         bin.install "wormhole"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.2.1/wormhole_darwin_arm64.tar.gz"
-      sha256 "9db4538498753607deacdd9f583ac523c9a33feeb3fdd3017bee5789083bf40c"
+      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.3.0/wormhole_darwin_arm64.tar.gz"
+      sha256 "ceea5b5a9f6fbc9115e501ca5b47d27d4fe75a4599999e9ab27ce854f189ce00"
 
       define_method(:install) do
         bin.install "wormhole"
@@ -29,15 +29,15 @@ class Wormhole < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.2.1/wormhole_linux_amd64.tar.gz"
-      sha256 "37d34e667f99b3089cc6b78a25b12843f1770d5515b276d52270a705d1fdd00c"
+      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.3.0/wormhole_linux_amd64.tar.gz"
+      sha256 "ff7875276281493063fba258a8d2a98089214349148134df088b99ae4257c1ce"
       define_method(:install) do
         bin.install "wormhole"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.2.1/wormhole_linux_arm64.tar.gz"
-      sha256 "ff7811229175c735fa0a5417a1338272ded91e0ca17b61ab3f0d4b040f28124b"
+      url "https://github.com/MuhammadHananAsghar/wormhole/releases/download/v0.3.0/wormhole_linux_arm64.tar.gz"
+      sha256 "cfab7e280f06873fa93cbfd66c7347f77fd78e8c8033013d99cfee37d7ede09b"
       define_method(:install) do
         bin.install "wormhole"
       end
